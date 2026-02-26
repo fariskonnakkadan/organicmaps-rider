@@ -1,0 +1,27 @@
+• OSM-kortdata fra 16. februar
+• Wikipedia-data fra 1. februar
+• Sorte vandre- og cykelruter er nu synlige i det mørke tema
+• Tilføjet flere biltjenester: reparation, service og reservedele
+• Tilføjet OSM-browsergodkendelse
+• Rettet cykeladgang på nogle vejtyper
+• Rettet beregning af gennemsnitshastighed
+• Forbedret søgerangering for kategorier
+• Tilføjet usbekisk køkken
+• Tilføjet svævebaner på kortet
+• Rettet Wikimedia-links med "?" i titlen
+• Rettet parsing af GPX-filer med "+" i koordinater
+
+### Oversættelser
+
+• Fjernet dublerede bynavne i nogle kortregioner
+• Rettet hebraiske stemmevejledninger
+• Rettet koreanske tastefejl
+• Tilføjet russiske søgesynonymer
+• Forbedret tyske stemmevejledninger
+• Rettet manglende oversættelse for nedlagt jernbanetunnel
+• Rettet landeoversættelse på rumænsk
+• Tilføjet laotiske og armenske oversættelser
+• Tilføjet manglende armenske oversættelser
+• Opdateret oversættelser fra Weblate-bidragydere
+
+Tak til alle, der bidrager, donerer og støtter Organic Maps! Lad os bygge de bedste kort sammen!

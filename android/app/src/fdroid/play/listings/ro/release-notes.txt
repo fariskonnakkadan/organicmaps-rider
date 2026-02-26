@@ -1,0 +1,9 @@
+• Date OSM din 16 februarie, Wikipedia din 1 februarie
+• Traseele negre de drumeții și ciclism sunt acum vizibile în tema întunecată
+• S-au adăugat tiroliene și mai multe servicii auto: reparații, service și piese
+• S-a remediat rutarea bicicletelor și calculul vitezei medii
+• Căutare categorii îmbunătățită
+• Bucătărie uzbecă
+• Ore de deschidere extensibile
+• Afișează și utilizează altitudinea MSL pentru traseele înregistrate pe Android 14+
+…mai mult la omaps.org/news

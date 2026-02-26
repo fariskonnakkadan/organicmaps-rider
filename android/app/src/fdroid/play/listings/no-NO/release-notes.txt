@@ -1,0 +1,11 @@
+• OSM-data per 16. februar, Wikipedia per 1. februar
+• Svarte tur- og sykkelruter er nå synlige i mørkt tema
+• Lagt til zip-linjer og flere biltjenester: reparasjon, service og deler
+• Fikset sykkelruting og beregning av gjennomsnittshastighet
+• Forbedret kategorisøk
+• Usbekisk mat
+• Utvidbare åpningstider
+• Vis og bruk MSL-høyde for innspilte spor på Android 14+
+• Fikset import av KML, KMZ, GPX, GeoJSON fra WhatsApp
+• Lagt til oversettelser for laotisk og armensk
+…mer på omaps.org/news

@@ -1,0 +1,10 @@
+• OSM podaci od 16. februara, Wikipedia od 1. februara
+• Crne planinarske i biciklističke rute su sada vidljive u tamnoj temi
+• Dodate zip linije i više auto servisa: popravka, servis i delovi
+• Ispravljeno rutiranje bicikla i proračun prosečne brzine
+• Poboljšana pretraga kategorija
+• Uzbekistanska kuhinja
+• Proširivo radno vreme
+• Prikaži i koristi MSL nadmorsku visinu za snimljene tragove na Android 14+
+• Popravljen uvoz KML, KMZ, GPX, GeoJSON iz WhatsApp-a
+…više na omaps.org/news

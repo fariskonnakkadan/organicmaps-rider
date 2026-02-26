@@ -1,0 +1,10 @@
+• OSM-data pr. 16. februar, Wikipedia pr. 1. februar
+• Sorte vandre- og cykelruter er nu synlige i mørkt tema
+• Tilføjet svævebaner og flere biltjenester: reparation, service og reservedele
+• Rettet cykelruteplanlægning og beregning af gennemsnitshastighed
+• Forbedret kategorisøgning
+• Usbekisk køkken
+• Udvidelige åbningstider
+• Vis og brug MSL-højde for optagede spor på Android 14+
+• Rettet import af KML, KMZ, GPX, GeoJSON fra WhatsApp
+…mere på omaps.org/news

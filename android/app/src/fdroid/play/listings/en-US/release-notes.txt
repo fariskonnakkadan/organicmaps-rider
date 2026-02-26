@@ -1,0 +1,11 @@
+• OSM data as of February 16, Wikipedia as of February 1
+• Black hiking and cycling routes are now visible in the dark theme
+• Added zip lines and more car services: repair, service, and parts
+• Fixed bicycle routing and average speed calculation
+• Improved category search
+• Uzbek cuisine
+• Expandable opening hours
+• Show and use MSL altitude for recorded tracks on Android 14+
+• Fixed KML, KMZ, GPX, GeoJSON import from WhatsApp
+• Added Lao and Armenian translations
+…more at omaps.org/news

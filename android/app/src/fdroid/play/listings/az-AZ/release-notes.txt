@@ -1,0 +1,8 @@
+• 16 fevral tarixli OSM məlumatları, 1 fevral tarixli Vikipediya
+• Qara yürüyüş və velosiped marşrutları indi qaranlıq rejimdə görünür
+• Kanat yolları və daha çox avtomobil xidmətləri əlavə edildi: təmir, xidmət və ehtiyat hissələri
+• Velosiped marşrutlaşdırılması və orta sürət hesablanması düzəldildi
+• Kateqoriya axtarışı təkmilləşdirildi
+• Özbək mətbəxi
+• Genişləndirilə bilən iş saatları
+…daha ətraflı omaps.org/news
