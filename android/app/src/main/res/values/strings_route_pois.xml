@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Strings of the "places ahead on the route" panel. Kept out of the generated strings.xml. -->
+<resources>
+  <string name="nav_poi_ahead_title">Ahead on route</string>
+  <string name="nav_poi_ahead_empty">No fuel or food found ahead</string>
+  <string name="nav_poi_fuel_fallback">Fuel station</string>
+  <string name="nav_poi_food_fallback">Restaurant</string>
+  <string name="nav_poi_button_description">Places ahead on the route</string>
+</resources>

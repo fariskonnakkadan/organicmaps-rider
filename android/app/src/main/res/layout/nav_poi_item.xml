@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:gravity="center_vertical"
+  android:orientation="horizontal"
+  android:paddingTop="@dimen/margin_quarter"
+  android:paddingBottom="@dimen/margin_quarter">
+  <ImageView
+    android:id="@+id/nav_poi_icon"
+    android:layout_width="@dimen/nav_poi_icon_size"
+    android:layout_height="@dimen/nav_poi_icon_size"
+    android:layout_marginEnd="@dimen/margin_half"
+    android:contentDescription="@null"
+    app:tint="?iconTint"
+    tools:src="@drawable/ic_routing_fuel_on" />
+  <TextView
+    android:id="@+id/nav_poi_name"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:ellipsize="end"
+    android:maxLines="1"
+    android:textAppearance="@style/MwmTextAppearance.Body4"
+    tools:text="Shell" />
+  <TextView
+    android:id="@+id/nav_poi_distance"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_half"
+    android:textAppearance="@style/MwmTextAppearance.Body4"
+    android:textColor="?secondary"
+    tools:text="2.4 km" />
+</LinearLayout>

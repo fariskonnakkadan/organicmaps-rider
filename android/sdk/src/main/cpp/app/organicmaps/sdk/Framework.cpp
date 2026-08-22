@@ -15,6 +15,7 @@
 #include "map/everywhere_search_params.hpp"
 #include "map/framework.hpp"
 #include "map/place_page_info.hpp"
+#include "map/route_poi_finder.hpp"
 #include "map/user_mark.hpp"
 
 #include "storage/country_info_getter.hpp"
@@ -1150,6 +1151,42 @@ JNIEXPORT jdoubleArray Java_app_organicmaps_sdk_Framework_nativeLatLonToScreen(J
   double xy[] = {pixel.x, pixel.y};
   jdoubleArray result = env->NewDoubleArray(2);
   env->SetDoubleArrayRegion(result, 0, 2, xy);
+  return result;
+}
+
+JNIEXPORT jobjectArray Java_app_organicmaps_sdk_Framework_nativeGetRoutePoisAhead(JNIEnv * env, jclass,
+                                                                                  jint maxTotal)
+{
+  auto const & routingManager = frm()->GetRoutingManager();
+  if (!routingManager.IsRoutingActive() || !routingManager.IsRouteValid())
+    return nullptr;
+
+  auto const * route = routingManager.RoutingSession().GetRoute();
+  if (route == nullptr)
+    return nullptr;
+
+  route_pois::SearchParams params;
+  params.m_maxTotal = static_cast<size_t>(maxTotal);
+  params.m_maxPerCategory = params.m_maxTotal;
+
+  auto const pois = route_pois::FindAhead(frm()->GetDataSource(), *route, params);
+
+  static jclass const poiClass = jni::GetGlobalClassRef(env, "app/organicmaps/sdk/routing/RoutePoi");
+  // RoutePoi(int category, String name, double distanceMeters, double lat, double lon)
+  static jmethodID const poiCtor = jni::GetConstructorID(env, poiClass, "(ILjava/lang/String;DDD)V");
+
+  auto const count = static_cast<jsize>(pois.size());
+  jobjectArray const result = env->NewObjectArray(count, poiClass, nullptr);
+  for (jsize i = 0; i < count; ++i)
+  {
+    auto const & poi = pois[i];
+    jni::TScopedLocalRef name(env, jni::ToJavaString(env, poi.m_name));
+    jni::TScopedLocalRef item(env, env->NewObject(poiClass, poiCtor, static_cast<jint>(poi.m_category), name.get(),
+                                                 static_cast<jdouble>(poi.m_distanceMeters),
+                                                 static_cast<jdouble>(poi.m_latLon.m_lat),
+                                                 static_cast<jdouble>(poi.m_latLon.m_lon)));
+    env->SetObjectArrayElement(result, i, item.get());
+  }
   return result;
 }
 

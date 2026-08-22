@@ -107,6 +107,23 @@
       app:lanesEditModeLanesCount="10"
       tools:visibility="visible" />
 
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/nav_poi_button"
+    style="@style/MwmWidget.MapButton"
+    android:layout_margin="@dimen/nav_frame_padding"
+    android:contentDescription="@string/nav_poi_button_description"
+    android:elevation="@dimen/nav_elevation"
+    android:src="@drawable/ic_nav_info"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/lanes" />
+
+  <include
+    layout="@layout/nav_poi_panel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/nav_poi_button" />
+
   <app.organicmaps.sdk.widgets.speedlimit.SpeedLimitView
     android:id="@+id/nav_speed_limit"
     style="@style/MwmWidget.SpeedLimit"
