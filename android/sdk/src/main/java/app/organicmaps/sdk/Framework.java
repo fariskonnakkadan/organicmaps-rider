@@ -14,6 +14,7 @@ import app.organicmaps.sdk.products.ProductsConfig;
 import app.organicmaps.sdk.routing.JunctionInfo;
 import app.organicmaps.sdk.routing.RouteMarkData;
 import app.organicmaps.sdk.routing.RouteMarkType;
+import app.organicmaps.sdk.routing.RoutePoi;
 import app.organicmaps.sdk.routing.RoutingInfo;
 import app.organicmaps.sdk.routing.RoutingListener;
 import app.organicmaps.sdk.routing.RoutingLoadPointsListener;
@@ -85,6 +86,13 @@ public class Framework
   /** Project a WGS84 lat/lon onto pixel coordinates of the current map view. Returns {x, y}. */
   @Size(2)
   public static native double[] nativeLatLonToScreen(double lat, double lon);
+
+  /**
+   * Fuel stations and eateries lying ahead on the active route, ordered by the distance left to
+   * drive and alternating between the two categories. Returns null when no route is being followed.
+   */
+  @Nullable
+  public static native RoutePoi[] nativeGetRoutePoisAhead(int maxTotal);
 
   public static native DistanceAndAzimut nativeGetDistanceAndAzimuth(double dstMerX, double dstMerY, double srcLat,
                                                                      double srcLon, double north);

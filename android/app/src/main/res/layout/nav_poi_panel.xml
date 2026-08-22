@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/nav_poi_panel"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_margin="@dimen/margin_half"
+  android:elevation="@dimen/nav_elevation"
+  android:visibility="gone"
+  app:cardBackgroundColor="?cardBackground"
+  app:cardCornerRadius="@dimen/margin_half"
+  app:cardElevation="@dimen/nav_elevation"
+  tools:visibility="visible">
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="@dimen/nav_poi_panel_min_width"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_half">
+    <TextView
+      android:id="@+id/nav_poi_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/margin_quarter"
+      android:text="@string/nav_poi_ahead_title"
+      android:textAllCaps="true"
+      android:textAppearance="@style/MwmTextAppearance.Body4"
+      android:textColor="?secondary" />
+    <LinearLayout
+      android:id="@+id/nav_poi_items"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical" />
+    <TextView
+      android:id="@+id/nav_poi_empty"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/nav_poi_ahead_empty"
+      android:textAppearance="@style/MwmTextAppearance.Body4"
+      android:textColor="?secondary"
+      android:visibility="gone"
+      tools:visibility="visible" />
+  </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

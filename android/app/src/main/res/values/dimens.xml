@@ -127,6 +127,8 @@
 
   <!-- Nav menu -->
   <dimen name="nav_elevation">6dp</dimen>
+  <dimen name="nav_poi_panel_min_width">200dp</dimen>
+  <dimen name="nav_poi_icon_size">16dp</dimen>
   <dimen name="nav_street_height">44dp</dimen>
   <dimen name="nav_street_left">104dp</dimen>
   <dimen name="nav_next_turn_frame">88dp</dimen>

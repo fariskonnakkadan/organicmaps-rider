@@ -56,6 +56,8 @@ public class NavigationController implements TrafficManager.TrafficCallback, Nav
   private final View mNextTurnContainer;
 
   private final NavMenu mNavMenu;
+  @NonNull
+  private final NavPoiPanelController mPoiPanel;
   View.OnClickListener mOnSettingsClickListener;
   View.OnClickListener mOnVoiceSettingsClickListener;
 
@@ -85,6 +87,8 @@ public class NavigationController implements TrafficManager.TrafficCallback, Nav
     mNextStreet = mStreetFrame.findViewById(R.id.street);
 
     mLanesView = mTopFrame.findViewById(R.id.lanes);
+
+    mPoiPanel = new NavPoiPanelController(mTopFrame);
 
     mSpeedLimit = mTopFrame.findViewById(R.id.nav_speed_limit);
 
@@ -176,6 +180,7 @@ public class NavigationController implements TrafficManager.TrafficCallback, Nav
       updateVehicle(info);
 
     updateStreetView(info);
+    mPoiPanel.update();
     mNavMenu.update(info);
   }
 
@@ -203,6 +208,7 @@ public class NavigationController implements TrafficManager.TrafficCallback, Nav
       update(RoutingController.get().getCachedRoutingInfo());
     }
     UiUtils.showIf(show, mFrame);
+    mPoiPanel.show(show);
     if (!show)
       mMapButtonsViewModel.setTopHeaderHeight(0);
   }
