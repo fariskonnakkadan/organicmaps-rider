@@ -1,4 +1,9 @@
-/build
+# Keep built APKs visible to git (published as release artifacts).
+!/build/
+/build/*
+!/build/outputs/
+/build/outputs/*
+!/build/outputs/apk/
 /nativeOutputs
 
 # ignore private keys
