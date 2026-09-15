@@ -217,13 +217,10 @@ find_package(Python3 REQUIRED COMPONENTS Interpreter)
 
 add_subdirectory(libs)
 
+# Android-only fork: dev_sandbox/, generator/, qt/ and the iOS and desktop
+# packaging trees were dropped, so only the shared tools/ remain here.
 if (PLATFORM_DESKTOP)
-  add_subdirectory(dev_sandbox)
-  add_subdirectory(generator)
   add_subdirectory(tools)
-  if (NOT SKIP_QT_GUI)
-    add_subdirectory(qt)
-  endif()
 endif()
 
 omim_add_test_subdirectory(libs/qt_tstfrm)
